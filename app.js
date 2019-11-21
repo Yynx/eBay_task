@@ -2,7 +2,6 @@ const path = require('path'); // https://www.w3schools.com/nodejs/ref_path.asp
 const express = require('express'); 
 const app = express(); 
 const port = 3000;
-const axios = require('axios').default;
 const cors = require('cors')
 const ejs = require ('ejs')
 
