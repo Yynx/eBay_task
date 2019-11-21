@@ -9,20 +9,20 @@ Task brief:
 - Click a button on this page to submit the form
 - Send the form data to a new page that displays an example mock-up of your newly created listing to sell your item.
 
-## How to use the listing service
+# How to use the listing service
 
 Type your name, the name of your item, an item description, and the price you wish to sell your item for.
 Click the submit button to submit the form data.
 You will be directed to a new page where you can view your newly created listing.
 
-### Technologies
+## Technologies
 
 - HTML
 - CSS
 - JavaScript
 - Node.js (express, EJS, cors)
 
-### Setup
+## Setup
 
 ```
 npm init
@@ -30,7 +30,7 @@ npm install express cors --save
 ```
 Open the root URL (homepage route) in your browser by typing in "localhost: 3000".
 
-#### How I achieved this
+# How I achieved this
 
 In Index.html:
 Created a simple HTML form with a submit button
@@ -53,6 +53,6 @@ res.render("formSent.ejs", {name:name, item:item, price:price, description:descr
 This renders the new listing page (formSent.ejs) and uses EJS to allow the name, item, price and description variables which are declared in the app.js file to be used in new listing page (formSent.ejs).
 
 
-#### Credit
+#### Credits
 This link was helpful handling the form data: https://www.hacksparrow.com/webdev/express/handling-processing-forms.html 
 
