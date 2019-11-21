@@ -1,0 +1,38 @@
+/* this contains styling for the formSent route */
+
+body {
+    margin: auto;
+    background: rgba(0, 0, 0, .65); /* this line and the one below make the background image darker */
+    background-blend-mode: darken;
+    background-image: url("background-formSent.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+h3 {
+    color: black;
+    font-size: 20px;
+}
+
+h4 {
+    color:black;
+    font-size: 15px;
+}
+
+.listing-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.listing-summary {
+    background: rgba(255, 255 ,255 ,0.5); /* white background with 50% transparency */
+    padding: 20px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="formSent.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat&display=swap" rel="stylesheet">
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- JS link AFTER jQuery-->
+    <script src="main.js"></script>
+    <title>eBaby</title>
+</head>
+<body>
+    <div class="listing-container">
+        <h2>You have created a new listing.</h2>
+        <h3>Here is a summary of your listing:</h3>
+        <div class="listing-summary">
+            <h3>Name:</h3>
+            <h4><%= name %></h4>
+            <h3>Item:</h3>
+            <h4><%= item %></h4>
+            <h3>Price:</h3>
+            <h4>£<%= price %></h4>
+            <h3>Item description:</h3>
+            <h4><%= description %></h4>
+        </div>
+    </div>
+</body>
+</html>
