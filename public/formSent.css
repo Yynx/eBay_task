@@ -1,16 +1,21 @@
+/* this contains styling for the formSent route */
+
 body {
     display: row;
     height: 100%;
     width: 100%;
     margin: auto;
-    background-image: url("background-home.jpg");
+    background-image: url("background-formSent.jpg");
     background-size: cover;
     font-family: 'Indie Flower', cursive;
 }
 
-body > h1 {
+h1 {
     display: block;
     text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    color: white;
 }
 
 /* .form-container {

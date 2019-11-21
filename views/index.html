@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- css link -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat&display=swap" rel="stylesheet">
     <!-- jQuery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- JS link AFTER jQuery-->
@@ -15,21 +15,20 @@
     <title>eBaby</title>
 </head>
 <body>
-    <div class="form-container">
     <h1>eBaby</h1>
     <!-- form -->
     <form action="/formSent" method="POST">
             <label for="userID">Your name:</label>
-            <input type="text" name="userID" id="userID" placeholder="Type your name here..."><br>
+            <input type="text" name="userID" id="userID" placeholder="e.g. John Smith"><br>
     
             <label for="itemName">Name of item:</label>
-            <input type="text" name="itemName" id="itemName" placeholder="Type your item name here..."><br>
+            <input type="text" name="itemName" id="itemName" placeholder="e.g. Red shoes"><br>
 
             <label for="price">Price (£):</label>
-            <input type="text" name="itemPrice" id="price" placeholder="Type your item price here..."><br>
+            <input type="text" name="itemPrice" id="price" placeholder="e.g. 20"><br>
 
             <label for="itemDescription">Description:</label>
-            <textarea type="textarea" name="itemDescription" placeholder="Type a description of your item here..."></textarea><br>
+            <textarea type="textarea" name="itemDescription" rows="4" placeholder="Please provide a description of your item..."></textarea><br>
 
             <!-- submitButton -->
             <input id="submitButton" name="submitButton" type="submit">
