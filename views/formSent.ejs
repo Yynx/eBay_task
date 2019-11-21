@@ -7,7 +7,7 @@
     <!-- css link -->
     <link rel="stylesheet" type="text/css" href="formSent.css">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat&display=swap" rel="stylesheet">
     <!-- jQuery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- JS link AFTER jQuery-->
@@ -15,8 +15,19 @@
     <title>eBaby</title>
 </head>
 <body>
-        <h1>Congratulations, <%= name %>!</h1>
-        <p>You have successfully listed your item, <%= item %>, for £<%= price %></p>
-        <p>The item description is <%= description %></p>
+    <div class="listing-container">
+        <h2>You have created a new listing.</h2>
+        <h3>Here is a summary of your listing:</h3>
+        <div class="listing-summary">
+            <h3>Name:</h3>
+            <h4><%= name %></h4>
+            <h3>Item:</h3>
+            <h4><%= item %></h4>
+            <h3>Price:</h3>
+            <h4>£<%= price %></h4>
+            <h3>Item description:</h3>
+            <h4><%= description %></h4>
+        </div>
+    </div>
 </body>
 </html>

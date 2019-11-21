@@ -1,50 +1,38 @@
 /* this contains styling for the formSent route */
 
 body {
-    display: row;
-    height: 100%;
-    width: 100%;
     margin: auto;
+    background: rgba(0, 0, 0, .65); /* this line and the one below make the background image darker */
+    background-blend-mode: darken;
     background-image: url("background-formSent.jpg");
     background-size: cover;
-    font-family: 'Indie Flower', cursive;
-}
-
-h1 {
-    display: block;
-    text-align: center;
-    padding-top: 50px;
-    font-size: 40px;
-    color: white;
-}
-
-/* .form-container {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
-    display: row;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-} */
-
-form {
-    margin: auto;  /* centers the form */
-    width: 30%; /* form takes up a width of 30% of the page */
-    background: rgba(255,255,255,0.5); /* white background with a 50% transparency */
 }
 
-input[type=text], textarea {
-    font-family: 'Indie Flower', cursive; /* style inputs with type="text" and textareas */
-    display: block; /* moves each element to different line */
-    width: 90%; /* sets width to 90% of form width */
+h2 {
+    color: black;
+    font-size: 30px;
+    padding-top: 100px;
 }
 
-input[type=submit] {
-    font-family: 'Indie Flower', cursive; /* style the submit button */
-    display: block;
-    border-radius: 10px; /* makes button rounded */
+h3 {
+    color: black;
+    font-size: 20px;
 }
 
-p {
-    color: green;
+h4 {
+    color:black;
+    font-size: 15px;
+}
+
+.listing-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.listing-summary {
+    background: rgba(255, 255 ,255 ,0.5); /* white background with 50% transparency */
+    padding: 20px;
 }
