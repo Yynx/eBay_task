@@ -18,7 +18,6 @@ app.set('view engine', 'pug');
 app.get('/', (req, res) => res.send("index"));        // GET request to home page route, responds with index page
 
 app.post('/formSent', (req, res) => {
-    // res.render("formSent.html");
 
     const name = req.body.userID;
     const item = req.body.itemName;
