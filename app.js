@@ -21,9 +21,9 @@ app.post('/formSent', (req, res) => {
     const price = req.body.itemPrice;
     const description = req.body.itemDescription;
 
-    res.send(`Hi ${name}. You are selling ${item} for £${price}.`);
-    console.log(req.body);
-    res.send(req.body);
+    res.send(`Hi ${name}. You are selling ${item} for £${price}. Here is a description of your item: ${description}`);
+    // console.log(req.body); 
+    // res.send(req.body);
 });
 
 
