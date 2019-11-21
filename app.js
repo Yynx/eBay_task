@@ -28,8 +28,8 @@ app.post('/formSent', (req, res) => {
     // res.send(req.body);
 });
 
-app.get('/formSent', (req, res) => { 
-    res.render("formSent.html");
-})
+// app.get('/formSent', (req, res) => { 
+//     res.render("formSent.html");
+// })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));  
