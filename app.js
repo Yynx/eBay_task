@@ -14,4 +14,17 @@ app.engine('html', require('ejs').renderFile); //this is an extension required t
 
 app.get('/', (req, res) => res.send("index"));        // GET request to home page route, responds with index page
 
+app.post('/formSent', (req, res) => {
+    // res.render("formSent.html");
+    const name = req.body.userID;
+    const item = req.body.itemName;
+    const price = req.body.itemPrice;
+    const description = req.body.itemDescription;
+
+    res.send(`Hi ${name}. You are selling ${item} for £${price}.`);
+    console.log(req.body);
+    res.send(req.body);
+});
+
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));  
