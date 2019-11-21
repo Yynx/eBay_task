@@ -37,22 +37,22 @@ Created a simple HTML form with a submit button
 In the HTML form, pay attention to input NAME value (e.g. input name="userID")
 In the HTML form, changed the form action to "/formSent" and form method to "POST"
 
-In App.js:
+#### In App.js:
 I set up routing...
 - app.get() to render index.html on the homepage route
 
 - app.post() to POST form data to the /formSent route. Declared variables and used Express's in-built middleware function called express.urlencoded to parse the text data submitted via the POST method. To check if the form data has been sent through successfully, you can try console.log(req.body) and res.send(req.body) and a new body object containing parsed data in key-value pairs should be displayed.
 
-Using EJS:
+#### Using EJS:
 - Created a formSent.ejs file to display the new listing page
 
-In App.js:
+#### In App.js:
 ```
 res.render("formSent.ejs", {name:name, item:item, price:price, description:description});
 ```
 This renders the new listing page (formSent.ejs) and uses EJS to allow the name, item, price and description variables which are declared in the app.js file to be used in new listing page (formSent.ejs).
 
 
-#### Credits
+## Credits
 This link was helpful handling the form data: https://www.hacksparrow.com/webdev/express/handling-processing-forms.html 
 
