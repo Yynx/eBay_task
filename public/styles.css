@@ -1,0 +1,28 @@
+body {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    font-family: 'Indie Flower', cursive;
+}
+
+body > h1 {
+    text-align: center;
+}
+
+form {
+    margin: auto;  /* centers the form */
+    width: 30%; /* form takes up a width of 30% of the page */
+    background-color: pink;
+}
+
+input[type=text], textarea {
+    font-family: 'Indie Flower', cursive; /* style inputs with type="text" and textareas */
+    display: block; /* moves each element to different line */
+    width: 80%; /* sets width to 80% of form width */
+}
+
+input[type=submit] {
+    font-family: 'Indie Flower', cursive; /* style the submit button */
+    display: block;
+    border-radius: 10px; /* makes button rounded *./
+}
