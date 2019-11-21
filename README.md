@@ -2,7 +2,7 @@ Thursday Lap 1 - Consolidation Exercise
 Task: Implement a simple listing service (think ebay but really simple).
 Set up your project (git/npm etc) - DONE
 Folder structure - DONE
-Homepage to have a form to enter the details of the items you wish to sell 
+Homepage to have a form to enter the details of the items you wish to sell - DONE
 Click a button on this page to submit the form
 Send the form data to a new page that displays an example mock-up of your newly created listing to sell you item.
 Create a good readme to document how you got there.

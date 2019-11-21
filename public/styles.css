@@ -18,7 +18,7 @@ form {
 input[type=text], textarea {
     font-family: 'Indie Flower', cursive; /* style inputs with type="text" and textareas */
     display: block; /* moves each element to different line */
-    width: 80%; /* sets width to 80% of form width */
+    width: 90%; /* sets width to 90% of form width */
 }
 
 input[type=submit] {
