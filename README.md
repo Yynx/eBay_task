@@ -22,14 +22,37 @@ You will be directed to a new page where you can view your newly created listing
 - JavaScript
 - Node.js (express, EJS, cors)
 
-#### Setup
+### Setup
 
 ```
-Test
+npm init
+npm install express cors --save
 ```
+Open the root URL (homepage route) in your browser by typing in "localhost: 3000".
 
-##### How this was achieved
+#### How I achieved this
 
-When you submit the form, the page goes to localhost:3000/formSent. 
+In Index.html:
+Created a simple HTML form with a submit button
+In the HTML form, pay attention to input NAME value (e.g. input name="userID")
+In the HTML form, changed the form action to "/formSent" and form method to "POST"
 
-On localhost:3000/formSent. When you console log req.body, the JavaScript object is displayed.
+In App.js:
+I set up routing...
+- app.get() to render index.html on the homepage route
+
+- app.post() to POST form data to the /formSent route. Declared variables and used Express's in-built middleware function called express.urlencoded to parse the text data submitted via the POST method. To check if the form data has been sent through successfully, you can try console.log(req.body) and res.send(req.body) and a new body object containing parsed data in key-value pairs should be displayed.
+
+Using EJS:
+- Created a formSent.ejs file to display the new listing page
+
+In App.js:
+```
+res.render("formSent.ejs", {name:name, item:item, price:price, description:description});
+```
+This renders the new listing page (formSent.ejs) and uses EJS to allow the name, item, price and description variables which are declared in the app.js file to be used in new listing page (formSent.ejs).
+
+
+#### Credit
+This link was helpful handling the form data: https://www.hacksparrow.com/webdev/express/handling-processing-forms.html 
+

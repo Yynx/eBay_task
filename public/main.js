@@ -1,6 +1,6 @@
-$(document).ready( () => {
-    const variableName = document.querySelector('')
-    const variableName = document.querySelector('')
-    const variableName = document.querySelector('')
+// $(document).ready( () => {
+//     const variableName = document.querySelector('')
+//     const variableName = document.querySelector('')
+//     const variableName = document.querySelector('')
 
-})
+// })
