@@ -24,5 +24,9 @@ input[type=text], textarea {
 input[type=submit] {
     font-family: 'Indie Flower', cursive; /* style the submit button */
     display: block;
-    border-radius: 10px; /* makes button rounded *./
+    border-radius: 10px; /* makes button rounded */
+}
+
+p {
+    color: green;
 }
