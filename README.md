@@ -54,5 +54,5 @@ This renders the new listing page (formSent.ejs) and uses EJS to allow the name,
 
 
 ## Credits
-This link was helpful handling the form data: https://www.hacksparrow.com/webdev/express/handling-processing-forms.html 
+This link was helpful for handling the form data: https://www.hacksparrow.com/webdev/express/handling-processing-forms.html 
 
