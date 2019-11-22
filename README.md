@@ -48,7 +48,7 @@ I set up routing...
 
 #### In App.js:
 ```
-res.render("formSent.ejs", {name:name, item:item, price:price, description:description});
+res.render("formSent.ejs", {name, item, price, description});
 ```
 This renders the new listing page (formSent.ejs) and uses EJS to allow the name, item, price and description variables which are declared in the app.js file to be used in new listing page (formSent.ejs).
 

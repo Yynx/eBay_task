@@ -4,11 +4,10 @@ const port = 3000;
 const cors = require('cors');
 const ejs = require ('ejs');
 
-
 app.use(cors());
 app.use(express.static('public'));  // allows you to serve images, CSS files, and JavaScript files in a directory named public
 app.use(express.static('views'));   // allows you to serve images, CSS files, and JavaScript files in a directory named views
-app.use(express.urlencoded());   // allows us to process the text data submitted via the POST method (the processed form data is available on the body property of the request object)
+app.use(express.urlencoded());   // Parse URL-encoded bodies. Allows us to process the text data submitted via the POST method (the processed form data is available on the body property of the request object).
 app.set("view engine","ejs");   // tells app to use EJS as template engine
 
 app.get('/', (req, res) => res.render("index.html"));        // GET request to home page route, renders index page
